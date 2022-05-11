@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Squid War</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- fontawesome kit -->
+  <script src="https://kit.fontawesome.com/dba490f01b.js" crossorigin="anonymous"></script>
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/niceCountryInput.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <section class="main_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-5 col-5">
+          <div class="logo_img text-center">
+            <a href="index.html">
+              <img src="images/logo.svg" alt="squidwar" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-7 col-7">
+          <div class="row">
+            <div class="col-lg-6 col-md-5 col-sm-12 col-12">
+              <div class="left_topbar">
+                <img src="images/main2.png" alt="top" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12 col-12">
+              <div class="right_topbar">
+                <div class="button_switcher">
+                  <div class="wrap">
+                    <input type="checkbox" id="off" class="d-none" />
+                    <label for="off" class="formof">
+                      <span class="handler">
+                        <span class="handler-inner"></span>
+                      </span>
+                      <span class="title title1">0</span><br>
+                      <span class="title title3">Earn Coins</span>
+                      <span class="title2">Show</span>
+                      <span class="bg-on"></span>
+                    </label>
+                    <input type="checkbox" id="on" checked class="d-none" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row lesstop">
+        <div class="col-md-7">
+          <div class="left_main">
+
+            <div class="main_img">
+              <img src="images/main_character.svg" alt="main" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="topbar_right">
+
+            <div class="row">
+              <div class="col-12">
+                <div class="login_box">
+                  <h2>Login to the Game</h2>
+                  <p>Squidwar is<span> only 456 people</span> can participate.</p>
+                  <form action="index.html">
+                    <div class="form-group">
+                      <small class="form-text"><i class="fas fa-exclamation-circle"></i> Enter a
+                        correct email and password</small>
+                      <input type="email" class="form-control email_login mb-3 mt-4" id="exampleInputEmail1"
+                         placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control pass_login mb-3" id="passwordid"
+                        placeholder="Password">
+                    </div>
+                    <div class="form-check submitformcheck">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn signupbg" data-bs-toggle="modal" data-bs-target="#logintarget">
+                      Sign up
+                    </button>
+                    <button type="submit" class="btn submitbtn">Login</button>
+                    <!-- Modal -->
+
+                  </form>
+                  <div class="modal fade form_model" id="logintarget" tabindex="-1" aria-labelledby="logintarget"
+                    aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered m_dialog">
+                      <div class="modal-content m_content">
+                        <div class="modal-header m_header">
+                          <img src="images/popuphead.png" alt="img-fluid">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                          <form class="pop_form" action="index.html">
+                            <label class="form-label">Choose Your Location</label>
+                            <div class="niceCountryInputSelector mb-3" data-selectedcountry="US"
+                              data-showspecial="false" data-showflags="true" data-i18nall="All selected"
+                              data-i18nnofilter="No selection" data-i18nfilter="Filter"
+                              data-onchangecallback="onChangeCallback" >
+                            </div>
+                            <div class="form-group">
+                              <label for="yournamehelp" class="form-label ">Your Name</label>
+                              <input type="text" class="form-control popsame mb-3" id="yournamehelp"
+                                aria-describedby="yournamehelp" placeholder="Enter Your Name " required>
+                            </div>
+                            <div class="form-group">
+                              <label for="emailid" class="form-label">Email address</label>
+                              <label for="emailid" class="form-label errormsg">Enter a correct email address</label>
+                              <input type="email" class="form-control popsame errorfild mb-3" id="emailid"
+                                placeholder="Email Email Address">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="Passwordid2" class="form-label">Password</label>
+                              <input type="password" class="form-control popsame  mb-3" id="Passwordid2"
+                                placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <label for="walletaddress" class="form-label">Metamask Wallet Address</label>
+                              <input type="text" class="form-control popsame mb-3" id="walletaddress"
+                                aria-describedby="walletaddress" placeholder="Enter Metamask Wallet Address">
+                            </div>
+                            <input type="submit" value="SAVE & CONTINUE" class="popbtn">
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="login_instruction">
+                  <p>Sign up for your information to participate in the game.</p>
+                  <small>The coins you earned in the game will be sent to your metamask
+                    wallet address.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Main js links -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Custom js -->
+  <script src="js/niceCountryInput.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function onChangeCallback(ctr) {
+      console.log("The country was changed: " + ctr);
+      //$("#selectionSpan").text(ctr);
+    }
+
+    $(document).ready(function () {
+      $(".niceCountryInputSelector").each(function (i, e) {
+        new NiceCountryInput(e).init();
+      });
+    });
+  </script>
+  <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+
+</html>

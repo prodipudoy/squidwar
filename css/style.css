@@ -1,0 +1,670 @@
+@font-face {
+   src: url(../fonts/FlexoSoft-Regular.ttf);
+   font-family: Flexsoft Regular;
+}
+
+@font-face {
+   src: url(../fonts/FlexoSoft-Demi.ttf);
+   font-family: Flexsoft Demi;
+}
+
+@font-face {
+   src: url(../fonts/FlexoSoft-Medium.ttf);
+   font-family: Flexsoft Medium;
+}
+
+@font-face {
+   src: url(../fonts/FlexoSoft-Bold.ttf);
+   font-family: Flexsoft Bold;
+}
+
+@font-face {
+   src: url(../fonts/Digital-Dismay.otf);
+   font-family: Digital Dismoy;
+}
+
+@font-face {
+   src: url(../fonts/FlexoSoft-Heavy.ttf);
+   font-family: FelxoSoft Heavy;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #1b1a1f;
+}
+
+/* page one  */
+.main_bg {
+   background-color: #1b1a1f;
+   padding-bottom: 100px;
+   background-image: url(../images/main4.png);
+   background-repeat: no-repeat;
+   background-size: 150px;
+   background-position: bottom 50px right 0px;
+}
+
+.logo_img a img {
+   width: 50%;
+   margin: 0 auto;
+   margin-top: 15px;
+   z-index: 999;
+}
+
+.lesstop {
+   margin-top: -80px;
+}
+
+.left_main {
+   padding-top: 50px;
+}
+
+.main_img img{
+   margin-top: -70px;
+}
+.logo_img a img {}
+
+.wrap {
+   text-align: right;
+}
+
+.right_topbar {
+   margin-top: 60px;
+}
+
+.left_topbar img {
+   width: 85%;
+}
+
+label {
+   display: inline-block;
+}
+
+/* input[type="checkbox"] {
+   display: none;
+} */
+
+/* input[type="checkbox"]+label */
+
+.formof {
+   position: relative;
+   display: inline-block;
+   width: 95%;
+   padding: 8px 18px;
+   text-align: right;
+   border-radius: 17%/50%;
+   box-sizing: border-box;
+   background-color: #27262c;
+   overflow: hidden;
+   cursor: pointer;
+   z-index: 1;
+}
+
+label[for="off"] {
+   /* margin-right: 8%; */
+   color: white;
+}
+
+.handler {
+   position: absolute;
+   top: -5px;
+   left: -2%;
+   display: block;
+   padding: 22%;
+   border-radius: 50%;
+   background-image: url(../images/coin.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transition: all .4s;
+   z-index: 3;
+}
+
+.handler-inner {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: block;
+   width: 42%;
+   height: 42%;
+   border-radius: 50%;
+   margin: auto;
+   z-index: 4;
+}
+
+.title {
+   font-family: Flexsoft Demi;
+   font-size: 18px;
+   position: relative;
+   left: -3%;
+   color: #979799;
+   opacity: 0;
+   transition: all .6s;
+   z-index: 2;
+
+
+}
+
+.title1 {
+   font-family: Flexsoft Bold;
+   font-size: 24px;
+   left: -35%;
+   color: #f4d73e;
+
+}
+
+.title2 {
+   font-family: Flexsoft Demi;
+   display: inline-block;
+   top: -20px;
+   font-size: 18px;
+}
+
+.title3 {
+   top: -10px;
+}
+
+.bg-on {
+   position: absolute;
+   top: 0;
+   left: -100%;
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+   background: #27262c;
+   transition: all .4s ease-out;
+
+   z-index: 1;
+}
+
+input[type="checkbox"]:checked+label>.handler {
+   left: 59%;
+}
+
+input[type="checkbox"]:checked+label>.title {
+   opacity: 1;
+}
+
+input[type="checkbox"]:checked+label>.bg-on {
+   left: 0;
+}
+
+
+.login_box {
+   margin-top: 75px;
+   padding: 20px;
+   background-color: #26252a;
+   border-radius: 20px;
+}
+
+.login_box h2 {
+   font-family: Flexsoft Demi;
+   font-size: 38px;
+   margin-left: 20px;
+   color: white;
+}
+
+.login_box p {
+   font-family: Flexsoft Regular;
+   margin-left: 20px;
+   color: white;
+}
+
+.login_box p span {
+   color: #df5598;
+}
+
+.email_login,
+.pass_login {
+   background-color: #313036;
+   border: 1px solid #999999;
+   padding: 10px;
+   color: white;
+}
+
+
+.email_login:focus,
+.pass_login:focus {
+   background-color: #1b1a1f;
+   border: 1px solid #999999;
+   box-shadow: none;
+   color: white;
+}
+
+.form-check-input:checked {
+   background-color: #313036;
+   border: 1px solid #999999;
+   box-shadow: none;
+}
+
+.form-check-input:focus {
+   background-color: #1b1a1f;
+   border: 1px solid #999999;
+   box-shadow: none;
+}
+
+.submitformcheck {
+   font-family: Flexsoft Regular;
+   color: #999999;
+   margin-bottom: 20px;
+}
+
+.signupbg {
+   width: 33%;
+   font-family: Flexsoft Bold;
+   font-size: 24px;
+   padding: 8px 20px;
+   background-image: url(../images/button.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+}
+
+.signupbg:hover,
+.submitbtn:hover {
+   color: white;
+}
+
+.submitbtn {
+   font-family: Flexsoft Bold;
+   font-size: 24px;
+   padding: 8px;
+   width: 60%;
+   background-image: url(../images/button2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: #ffffff;
+}
+
+.signupbg:focus,
+.submitbtn:focus {
+   outline: none;
+   box-shadow: none;
+   border: none;
+}
+
+.form-group small {
+   font-family: Flexsoft Regular;
+   width: 100%;
+   display: inline-block;
+   border: 1px solid #e05598;
+   border-radius: 5px;
+   padding: 12px;
+   color: white !important;
+}
+
+.form-text i {
+   color: #e05598;
+}
+
+.login_instruction {
+   margin-top: 30px;
+}
+
+.login_instruction p {
+   font-size: 18px;
+   color: white;
+   margin-bottom: 0;
+}
+
+.login_instruction small {
+   font-size: 16px;
+   color: #979799;
+}
+
+/* ============ */
+
+.modal-header img {
+   width: 25%;
+}
+
+.niceCountryInputMenuDropdownContent {
+   width: 100%;
+   position: absolute;
+   z-index: 999;
+   background: white;
+}
+
+.pop_form {}
+
+.pop_form input.popsame {
+   background-color: #313036;
+   border: 1px solid #9999996e;
+   padding: 8px 10px;
+   color: white;
+
+   box-shadow: none;
+   outline: none;
+}
+
+.pop_form input::placeholder {
+   font-family: Flexsoft Regular;
+   font-size: 20px;
+}
+
+.niceCountryInputMenuDropdown {
+   color: white;
+}
+
+.niceCountryInputMenuDropdownContent {
+   width: 100%;
+   position: absolute;
+   z-index: 999;
+   background: #1b1a1f;
+}
+
+.niceCountryInputMenuDropdownContent a {
+   color: white !important;
+}
+
+.pop_form input:focus {
+   border: none;
+   box-shadow: none;
+   outline: none;
+   background-color: #313036;
+   color: white;
+}
+
+.m_content {
+   background-color: #3b3a3f;
+   padding: 20px 5px;
+   z-index: 9999;
+   border-radius: 20px;
+}
+
+.m_header {
+   border: none;
+}
+
+.m_dialog {
+   max-width: 420px !important;
+}
+
+.pop_form label {
+   font-family: Flexsoft Medium;
+   font-size: 20px;
+   color: white;
+   margin-bottom: 3px;
+
+}
+
+.niceCountryInputMenu {
+   background: #313036 !important;
+   color: white !important;
+   border: 1px solid #9999996e;
+   cursor: pointer;
+   padding: 6px 0px;
+}
+
+.niceCountryInputMenu a {
+   color: white !important;
+   font-family: Flexsoft Regular;
+}
+
+.btn-close {
+   background-color: #4e4d53;
+   outline: none;
+   box-shadow: none;
+   border-radius: 50%;
+   color: #ffffff !important;
+}
+
+.btn-close:focus {
+   box-shadow: none;
+   outline: none;
+}
+
+.popbtn {
+   font-family: Flexsoft Bold;
+   font-size: 18px;
+   background: #3b3a3f;
+   background-image: url(../images/popbutton.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 10px;
+   width: 100%;
+   color: white;
+   box-shadow: none;
+   border: none;
+}
+
+.popbtn:focus {
+   box-shadow: none;
+   background-color: #3b3a3f;
+}
+
+.errorfild {
+   /* border: 1px solid #fc6db3 !important; */
+}
+
+.errormsg {
+   display: none;
+}
+
+/* ============================================================= */
+/* Gamepage */
+/* ============================================================= */
+.logo_image2 a img {
+   width: 33%;
+   top: 30px;
+}
+
+.right_topbar2 {
+   margin-top: 50px;
+}
+
+.formof2 {
+   width: 75%;
+   border-radius: 12%/50%;
+}
+
+.title12 {
+   left: -60px;
+}
+
+.title11 {
+   left: -5px;
+}
+
+.handler2 {
+   padding: 13%;
+}
+
+input[type="checkbox"]:checked+label>.handler2 {
+   left: 75%;
+}
+
+#demo {
+   font-family: Digital Dismoy;
+   font-size: 66px;
+   color: white;
+}
+
+.time_des h2 {
+   font-family: Flexsoft Bold;
+   color: white;
+   font-size: 22px;
+}
+
+.time_des h2 span {
+   color: #e05598;
+}
+
+.time_des p {
+   color: #cccccc;
+   font-size: 18px;
+   padding-bottom: 50px;
+}
+
+.hero_section {
+   background-image: url(../images/piggybank.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 850px;
+   margin-top: -200px;
+   position: relative;
+   margin-left: -20px;
+}
+
+.hero_content {
+   text-align: center;
+}
+
+.time_box {
+   position: absolute;
+   top: 77px;
+   left: 0;
+   height: 100%;
+   width: 100%;
+}
+
+.coin_flex {
+   display: table-cell;
+   padding-top: 50px;
+
+}
+
+.coin_flex h2 {
+   margin-bottom: 0;
+   top: 10px;
+   font-family: FelxoSoft Heavy;
+   font-size: 35px;
+   color: #f4d73e;
+}
+
+.single_gamebox {
+   background-color: #26252a;
+   padding: 10px;
+   border-radius: 20px;
+}
+
+.pointflex {
+   display: table-cell;
+   left: 17%;
+   padding-left: 6px;
+}
+
+.points1 {
+   background-color: #1b1a1f;
+   padding: 5px 10px;
+   border-radius: 20px;
+   width: 150px;
+   margin-top: 5px;
+   margin-left: -33px;
+   margin-bottom: 5px;
+}
+
+.pointflex p {
+   font-family: Flexsoft Bold;
+   font-size: 18px;
+   color: white;
+   margin-bottom: 0;
+}
+
+.points2 {
+   background-color: #1b1a1f;
+   padding: 5px 10px;
+   border-radius: 20px;
+   width: 185px;
+   margin-top: 5px;
+   margin-left: -67px;
+   margin-bottom: 5px;
+}
+
+.pointsflex2 {
+   display: table-cell;
+   left: 4%;
+   padding-left: 6px;
+
+}
+
+.pointsflex2 p {
+   color: #f4d73e;
+   margin-bottom: 0;
+   font-family: Flexsoft Bold;
+   font-size: 18px;
+
+}
+
+.gl_image {
+   /* position: relative; */
+}
+
+.gl_image img {
+   /* position: absolute; */
+   margin-top: -30%;
+   margin-left: -16px;
+}
+
+.gl_img1 {
+   margin-top: -90px !important;
+   margin-left: -30px !important;
+}
+
+.gl_img2 {
+   margin-left: -30px !important;
+}
+
+.gl_img3 {
+   margin-left: -25px !important;
+}
+
+.game_title h2 {
+   font-family: Flexsoft Bold;
+   font-size: 23px;
+   color: white;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.gamesubbtn {
+   background-image: url(../images/button3.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 3px 20px;
+   width: 100%;
+   margin-top: 20px;
+   font-family: Flexsoft Bold;
+   font-size: 24px;
+   color: white;
+   border: none;
+   text-transform: capitalize;
+}
+
+.gamesubbtn:focus {
+   box-shadow: none;
+   outline: none;
+   border: none;
+   background-image: url(../images/button4.png);
+}
+
+.gamesubbtn:hover {
+   color: white;
+   background-image: url(../images/button4.png);
+   -webkit-transition: all .3s linear;
+   -moz-transition: all .3s linear;
+   -o-transition: all .3s linear;
+   -ms-transition: all .3s linear;
+   transition: all .3s linear;
+}
+
+.thumbnail_img {
+   text-align: center;
+}
+
+.last_img {
+   margin-top: 30px;
+   margin-bottom: 50px;
+}
